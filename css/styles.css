@@ -1,0 +1,128 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  line-height: 1.1;
+}
+
+.heading {
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 1.2;
+  text-align: center;
+  margin: 38px 0 25px;
+}
+
+.form {
+  width: 467px;
+  margin: 0 auto;
+  background: rgba(202, 109, 79, 0.3);
+  border-radius: 15px;
+  padding: 34px 33px 26px;
+}
+
+.form-input {
+  margin-bottom: 25px;
+}
+
+.field-label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.required {
+  color: #ff0000;
+}
+
+.input {
+  border-radius: 10px;
+  border: none;
+  width: 100%;
+  height: 34px;
+  padding: 10px;
+}
+
+.country-input {
+  margin-bottom: 21px;
+}
+
+.country-selection.input {
+  background: #fff;
+}
+
+.select {
+  border: none;
+  width: 100%;
+}
+
+.select:focus {
+  outline: none;
+}
+
+.radio-buttons {
+  margin-top: 11px;
+  font-size: 0;
+}
+
+.select-button {
+  vertical-align: middle;
+  margin-right: 7px;
+}
+
+.button-label {
+  vertical-align: middle;
+  font-size: 14px;
+}
+
+.comments {
+  margin-bottom: 15px;
+}
+
+.textarea {
+  resize: none;
+  width: 100%;
+  height: 98px;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.privacy-policy-container {
+  margin-bottom: 20px;
+  font-size: 0;
+}
+
+.privacy-policy-link {
+  text-decoration: none;
+  color: #3256d9;
+  vertical-align: middle;
+  font-size: 14px;
+}
+
+.btn-container {
+  font-size: 0;
+}
+
+.btn {
+  width: 183px;
+  height: 37px;
+  border-radius: 10px;
+  border: none;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.reset-btn {
+  margin-right: 30px;
+  background: #c4c4c4;
+  color: #000;
+}
+
+.submit-btn {
+  background: #000;
+  color: #fff;
+}

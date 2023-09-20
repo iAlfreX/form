@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <h1 class="heading">Fill out of the form</h1>
+    <form action="" method="" name="main-form" target="_blank" class="form">
+      <div class="form-input">
+        <label for="username" class="field-label">First name:<span class="required">*</span></label>
+        <input type="text" name="username" id="username" class="input" placeholder="Enter your name..." required />
+      </div>
+
+      <div class="form-input">
+        <label for="electronic-mail" class="field-label">Your email:<span class="required">*</span></label>
+        <input
+          type="email"
+          name="electronic-mail"
+          id="electronic-mail"
+          class="input"
+          placeholder="Enter your email address..."
+          pattern="^[a-z0-9](\.?[a-z0-9]){5,}@g(oogle)?mail\.com$"
+          required
+        />
+      </div>
+
+      <div class="form-input">
+        <label for="phone-number" class="field-label">Your phone number:</label>
+        <input
+          type="tel"
+          name="phone-number"
+          id="phone-number"
+          class="input"
+          placeholder="Enter your phone number..."
+          maxlength="13"
+          minlength="13"
+        />
+      </div>
+
+      <div class="form-input country-input">
+        <label for="country" class="field-label">Select your country:</label>
+        <div class="country-selection input">
+          <select name="country" id="country" class="select">
+            <option value="Finland">Finland</option>
+            <option value="Ukraine" selected>Ukraine</option>
+            <option value="USA">USA</option>
+            <option value="France">France</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="form-input">
+        <label class="field-label">I want to attend event:</label>
+        <div class="radio-buttons">
+          <input type="radio" name="status" id="online" value="online" class="select-button" checked />
+          <label for="online" class="button-label">Online</label>
+        </div>
+        <div class="radio-buttons">
+          <input type="radio" name="status" id="offline" value="offline" class="select-button" />
+          <label for="offline" class="button-label">Offline</label>
+        </div>
+      </div>
+
+      <div class="comments">
+        <label for="comment" class="field-label">Comments:</label>
+        <textarea
+          name="comment"
+          id="comment"
+          class="textarea"
+          placeholder="Write the required additional information here..."
+        ></textarea>
+      </div>
+
+      <div class="privacy-policy-container">
+        <input type="checkbox" name="agreement" id="agreement" class="select-button" required />
+        <label for="agreement" class="button-label">I agree with</label>
+        <a href="#" target="_blank" class="privacy-policy-link">
+          &nbsp;Privacy Policy<span class="required">&nbsp;*</span>
+        </a>
+      </div>
+
+      <div class="btn-container">
+        <button type="reset" class="btn reset-btn">Reset</button>
+        <button type="submit" class="btn submit-btn">Send</button>
+      </div>
+    </form>
+  </body>
+</html>
